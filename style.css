@@ -1,0 +1,313 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center{
+    max-width: 1470px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.burger{
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 20px #f4f7fa;
+    margin-top: 57px;
+    transition: 0.5s ease-in-out;
+}
+.burger .line{
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    display: block;
+    margin: 0 auto;
+}
+.burger .line:nth-child(2){
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.burger .line:first-child{
+    margin-top: 22px;
+}
+.burger:hover{
+    box-shadow: 0 0 15px 20px #bcdaee;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.logo{
+    display: inline-block;
+    width: 412px;
+    height: 412px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 60px #f4f7fa;
+    position: absolute;
+    left: calc(50% - 206px);
+    top: -206px;
+    text-align: center;
+}
+header{
+    position: relative;
+    height: 266px;
+}
+.logo .name{
+    margin-top: calc(206px + 57px);
+    font-size: 48px;
+    color: #43a9ff;
+    font-weight: 600;
+}
+.logo .desc{
+    font-size: 18px;
+    font-weight: bold;
+    color: #e6e7e9;
+    text-transform: uppercase;
+}
+.search{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 60px;
+    font-size: 21px;
+}
+.container2{
+    background-image: url("./images/background_head.png");
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    text-align: center;
+}
+.container2 h2{
+    padding-top: 115px;
+}
+.container2 .btn{
+    text-decoration: none;
+    color: #43a9ff;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 15px 20px #f4f7fa;
+    margin-top: 60px;
+    display: inline-block;
+    padding: 21px 42px;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    background-color: #fff;
+}
+.container2 .btn:hover{
+    box-shadow: 0 0 15px 20px #bcdaee;
+    transition: 0.5s ease-in-out;
+}
+.container2 .btn:focus{
+    box-shadow: 0 0 15px 20px #93bcd8;
+}
+.container2 p{
+    font-size: 13px;
+    margin-top: 20px;
+    color: #d2d5d8;
+}
+.container3{
+    height: 1120px;
+    position: relative;
+}
+.container3 .left1{
+    background-image: url(./images/leftPhoto.png);
+    height: 560px;
+    width: 50%;
+    position: absolute;
+    left: 0;
+}
+.container3 .right1{
+    text-align: left;
+    height: 560px;
+    width: 50%;
+    background-color: #f7f8fb;
+    position: absolute;
+    right: 0;
+}
+.right1 h2{
+    margin-top: 197px;
+    margin-bottom: 55px;
+    margin-left: 65px;
+    font-size: 48px;
+    font-weight: 600;
+}
+.right1 p{
+    margin-left: 65px;
+    font-size: 13px;
+    color: #d2d5d8;
+    line-height: 25px;
+}
+.container3 .right2{
+    background-image: url(./images/rightPhoto.png);
+    height: 560px;
+    width: 50%;
+    margin-top: 560px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-position-x: 50%;
+}
+.container3 .left2{
+    text-align: left;
+    height: 560px;
+    width: 50%;
+    background-color: #f7f8fb;
+    margin-top: 560px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.left2 h2{
+    margin-top: 197px;
+    margin-bottom: 55px;
+    margin-left: 65px;
+    font-size: 48px;
+    font-weight: 600;
+}
+.left2 p{
+    margin-left: 65px;
+    font-size: 13px;
+    color: #d2d5d8;
+    line-height: 25px;
+}
+.container4{
+    height: 1000px;
+    position: relative;
+}
+.container4 .first--screen{
+    background-image: url(./images/firstScreen.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    background-position-x: 100%;
+}
+.container4 .first--text{
+    position: absolute;
+    right: 0;
+    text-align: left;
+    width: 50%;
+}
+.first--text h2{
+    margin-top: 470px;
+    margin-bottom: 55px;
+    margin-left: 65px;
+    font-size: 48px;
+    color: #43a9ff;
+    font-weight: 600;
+}
+.first--text p{
+    margin-left: 65px;
+    font-size: 13px;
+    color: #d2d5d8;
+    line-height: 25px;
+}
+.container5{
+    height: 1000px;
+    position: relative;
+}
+.container5 .second--screen{
+    background-image: url(./images/secondScreen.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    background-position-x: -40%;
+}
+.container5 .second--text{
+    position: absolute;
+    left: 0;
+    text-align: left;
+    width: 50%;
+    margin-left: 180px;
+}
+.second--text h2{
+    margin-top: 205px;
+    margin-bottom: 55px;
+    font-size: 48px;
+    color: #43a9ff;
+    font-weight: 600;
+}
+.second--text p{
+    font-size: 13px;
+    color: #d2d5d8;
+    line-height: 25px;
+}
+.container6{
+    height: 630px;
+    background-image: url(./images/Photo.png);
+    position: relative;
+    background-position-x: 35%;
+}
+.john--doe{
+    position: absolute;
+    right: 80px;
+}
+.john--doe h2{
+    margin-top: 188px;
+    margin-bottom: 55px;
+    font-size: 48px;
+    color: #fe3254;
+    font-weight: 600;
+}
+.john--doe p{
+    font-size: 13px;
+    color: #d2d5d8;
+    line-height: 25px;
+}
+.john--doe h5{
+    margin-top: 88px;
+}
+.container7{
+    height: 420px;
+    text-align: center;
+}
+.container7 p{
+    font-size: 13px;
+    margin-top: 135px;
+    color: #d2d5d8;
+}
+.container7 h2{
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: 600;
+}
+.container7 .btn{
+    text-decoration: none;
+    color: #43a9ff;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 15px 20px #f4f7fa;
+    margin-top: 60px;
+    display: inline-block;
+    padding: 21px 42px;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    background-color: #fff;
+}
+.container7 .btn:hover{
+    box-shadow: 0 0 15px 20px #bcdaee;
+    transition: 0.5s ease-in-out;
+}
+footer{
+    height: 1110px;
+    width: 100%;
+    background-image: url(./images/footer.png);
+    background-repeat: no-repeat;
+    -ms-background-position-x: 50%;
+    background-position-x: 50%;
+}
