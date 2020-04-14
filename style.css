@@ -91,6 +91,8 @@ header{
 }
 .container2 h2{
     padding-top: 115px;
+    margin: 0 auto;
+    width: 90%;
 }
 .container2 .btn{
     text-decoration: none;
@@ -117,22 +119,79 @@ header{
     margin-top: 20px;
     color: #d2d5d8;
 }
-.container3{
-    height: 1120px;
-    position: relative;
+.container{
+    text-align: center;
 }
-.container3 .left1{
-    background-image: url(./images/leftPhoto.png);
-    height: 560px;
+.text p{
+    font-size: 12px;
+    color: #d2d5d8;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.text h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+.cards .item{
+    color: #43a9ff;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin: 0 2.3%;
+}
+.cards .item i{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.cards .item h3{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+.cards .item p{
+    font-size: 12px;
+    color: #d2d5d8;
+    line-height: 20px;
+}
+.container .btn{
+    text-decoration: none;
+    color: #43a9ff;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 15px 20px #f4f7fa;
+    margin-top: 60px;
+    margin-bottom: 105px;
+    display: inline-block;
+    padding: 21px 42px;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    background-color: #fff;
+
+}
+.container .btn:hover{
+    box-shadow: 0 0 15px 20px #bcdaee;
+    transition: 0.5s ease-in-out;
+}
+.container .btn:focus{
+    box-shadow: 0 0 15px 20px #93bcd8;
+}
+.container3{
+    position: relative;
+    height: 1120px;
+}
+.container3 .left1, .container3 .right1{
+    display: inline-block;
     width: 50%;
-    position: absolute;
-    left: 0;
+    height: 50%;
+}
+.container3 .left1 img{
+    width: 100%;
+    height: 100%;
 }
 .container3 .right1{
-    text-align: left;
-    height: 560px;
-    width: 50%;
     background-color: #f7f8fb;
+    text-align: left;
     position: absolute;
     right: 0;
 }
@@ -149,22 +208,23 @@ header{
     color: #d2d5d8;
     line-height: 25px;
 }
-.container3 .right2{
-    background-image: url(./images/rightPhoto.png);
-    height: 560px;
+.container3 .left2, .container3 .right2{
+    display: inline-block;
     width: 50%;
-    margin-top: 560px;
+    height: 50%;
+}
+.container3 .right2{
     position: absolute;
     right: 0;
     bottom: 0;
-    background-position-x: 50%;
+}
+.container3 .right2 img{
+    width: 100%;
+    height: 100%;
 }
 .container3 .left2{
-    text-align: left;
-    height: 560px;
-    width: 50%;
     background-color: #f7f8fb;
-    margin-top: 560px;
+    text-align: left;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -172,77 +232,81 @@ header{
 .left2 h2{
     margin-top: 197px;
     margin-bottom: 55px;
-    margin-left: 65px;
+    margin-left: 165px;
     font-size: 48px;
     font-weight: 600;
 }
 .left2 p{
-    margin-left: 65px;
+    margin-left: 165px;
     font-size: 13px;
     color: #d2d5d8;
     line-height: 25px;
 }
 .container4{
-    height: 1000px;
+    background-image: url(./images/Snowflake.png);
+    background-repeat: no-repeat;
+    background-position-x: 3%;
+    background-position-y: -27%;
+    background-size: 25%;
+}
+.application{
     position: relative;
 }
-.container4 .first--screen{
-    background-image: url(./images/firstScreen.png);
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 1000px;
-    position: absolute;
-    left: 0;
-    background-position-x: 100%;
-}
-.container4 .first--text{
-    position: absolute;
-    right: 0;
-    text-align: left;
+.application .app, .application .content--right{
+    display: inline-block;
     width: 50%;
 }
-.first--text h2{
-    margin-top: 470px;
-    margin-bottom: 55px;
-    margin-left: 65px;
-    font-size: 48px;
-    color: #43a9ff;
-    font-weight: 600;
+.application .app img{
+    max-width: 65%;
+    margin-left: 26px;
 }
-.first--text p{
-    margin-left: 65px;
-    font-size: 13px;
-    color: #d2d5d8;
-    line-height: 25px;
-}
-.container5{
-    height: 1000px;
-    position: relative;
-}
-.container5 .second--screen{
-    background-image: url(./images/secondScreen.png);
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 1000px;
+.application .content--right{
     position: absolute;
     right: 0;
-    background-position-x: -40%;
 }
-.container5 .second--text{
-    position: absolute;
-    left: 0;
-    text-align: left;
-    width: 50%;
-    margin-left: 180px;
-}
-.second--text h2{
+.application .content--right h2{
     margin-top: 205px;
     margin-bottom: 55px;
     font-size: 48px;
     color: #43a9ff;
     font-weight: 600;
 }
-.second--text p{
+.application .content--right p{
+    font-size: 13px;
+    color: #d2d5d8;
+    line-height: 25px;
+}
+.container5{
+    background-image: url(./images/Snowflake2.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 200%;
+    background-size: 23%;
+}
+.second--application{
+    text-align: right;
+}
+.second--application .second--screen, .second--application .content--left{
+    display: inline-block;
+    width: 50%;
+}
+.second--application .second--screen img{
+    max-width: 65%;
+    margin-left: 217px;
+}
+.second--application .content--left{
+    position: absolute;
+    left: 16%;
+    text-align: left;
+}
+.second--application .content--left h2{
+    margin-top: 205px;
+    margin-bottom: 55px;
+    font-size: 48px;
+    color: #43a9ff;
+    font-weight: 600;
+}
+.second--application .content--left p{
     font-size: 13px;
     color: #d2d5d8;
     line-height: 25px;
@@ -250,43 +314,48 @@ header{
 .container6{
     height: 630px;
     background-image: url(./images/Photo.png);
-    position: relative;
-    background-position-x: 35%;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
 }
-.john--doe{
-    position: absolute;
-    right: 80px;
+.john--doe .ceo{
+    margin-left: 60%;
+    padding-top: 10px;
 }
-.john--doe h2{
+.ceo h2{
     margin-top: 188px;
     margin-bottom: 55px;
     font-size: 48px;
     color: #fe3254;
     font-weight: 600;
 }
-.john--doe p{
+.ceo p{
     font-size: 13px;
     color: #d2d5d8;
     line-height: 25px;
 }
-.john--doe h5{
+.ceo h5{
     margin-top: 88px;
 }
-.container7{
-    height: 420px;
+footer{
+    height: 1110px;
+    width: 100%;
+    background-image: url(./images/footer.png);
+    background-repeat: no-repeat;
+    -ms-background-position-x: 50%;
+    background-position-x: 50%;
     text-align: center;
 }
-.container7 p{
+footer p{
     font-size: 13px;
     margin-top: 135px;
     color: #d2d5d8;
 }
-.container7 h2{
+footer h2{
     margin-top: 20px;
     font-size: 48px;
     font-weight: 600;
 }
-.container7 .btn{
+footer .btn{
     text-decoration: none;
     color: #43a9ff;
     font-size: 14px;
@@ -299,15 +368,158 @@ header{
     transition: 0.5s ease-in-out;
     background-color: #fff;
 }
-.container7 .btn:hover{
+footer .btn:hover{
     box-shadow: 0 0 15px 20px #bcdaee;
     transition: 0.5s ease-in-out;
 }
-footer{
-    height: 1110px;
-    width: 100%;
-    background-image: url(./images/footer.png);
-    background-repeat: no-repeat;
-    -ms-background-position-x: 50%;
-    background-position-x: 50%;
+
+
+
+@media(max-width: 1024px){
+    .cards .item{
+        width: 45%;
+    }
+    .container4{
+        background-size: 45%;
+    }
+    .container5{
+        background-size: 45%;
+        background-position-x: 105%;
+    }
+    .application .app img{
+        max-width: 100%;
+    }
+    .second--application .second--screen img{
+        max-width: 100%;
+        margin-left: 45px;
+    }
+    .second--application .content--left {
+        left: 7%;
+    }
+    .left2 h2{
+        margin-left: 100px;
+    }
+    .left2 p{
+        margin-left: 100px;
+    }
+}
+
+@media(max-width: 768px){
+    .logo{
+        width: 206px;
+        height: 206px;
+        top: -103px;
+        left: calc(50% - 103px);
+    }
+    .logo .name{
+        margin-top: 115px;
+        font-size: 36px;
+    }
+    .logo .desc{
+        font-size: 12px;
+    }
+    .burger{
+        margin-top: 30px;
+    }
+    header{
+        height: 100px;
+    }
+    .cards .item{
+        margin-bottom: 20px;
+    }
+    .application .content--right {
+        right: -20px;
+    }
+    .application .content--right h2{
+        margin-top: 125px;
+    }
+    .second--application .content--left h2 {
+        margin-top: 125px;
+    }
+    .container3{
+        height:800px;
+    }
+    .right1 h2{
+        margin-top: 50px;
+    }
+    .left2 h2{
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+    .left2 p{
+        margin-left: 35px;
+    }
+    .container6{
+        background-position-x: 33%;
+    }
+    .ceo h2 {
+        margin-top: 60px;
+        font-size: 45px;
+    }
+    footer{
+        background-position-x: 88%;
+    }
+}
+
+@media(max-width: 600px){
+    .cards .item{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .application .app, .application .content--right{
+        width: 100%;
+        text-align: center;
+    }
+    .application .content--right{
+        position: static;
+
+    }
+    .application .content--right h2{
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    .container4{
+        background-position-y: -5%;
+    }
+    .burger{
+        width: 40px;
+        height: 40px;
+    }
+    .burger .line:first-child{
+        margin-top: 12px;
+    }
+    .search{
+        line-height: 40px;
+    }
+    .container2{
+        background-size: cover;
+        height: 100vh;
+        min-height: 568px;
+    }
+}
+
+@media(max-width: 425px){
+    .application .app{
+        overflow: hidden;
+    }
+    .application .app img{
+        max-width: 122%;
+        margin-left: -11%;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        top: -75px;
+        left: calc(50% - 75px);
+    }
+    .logo .name{
+        margin-top: 80px;
+        font-size: 30px;
+    }
+    .logo .desc{
+        font-size: 10px;
+    }
+    .burger{
+        margin-top: 15px;
+    }
 }
