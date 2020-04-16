@@ -555,6 +555,12 @@ footer .btn:hover{
         margin-top: 50px;
         margin-left: 55px;
     }
+    footer{
+        height: 100vh;
+        background-size: cover;
+        background-position-x: 80%;
+        background-position-y: 20%;
+    }
 }
 
 @media(max-width: 425px){
@@ -637,6 +643,9 @@ footer .btn:hover{
     }
 }
 @media(max-width:320px){
+    .container2 h2{
+        padding-top: 5px;
+    }
     .container3 .right1 h2{
         margin-top: 0px;
     }
@@ -655,5 +664,8 @@ footer .btn:hover{
     }
     footer{
         background-position-x: 80%;
+    }
+    footer p{
+        margin-top: 0px;
     }
 }
