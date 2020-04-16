@@ -296,7 +296,7 @@ header{
 }
 .second--application .content--left{
     position: absolute;
-    left: 16%;
+    left: 24%;
     text-align: left;
 }
 .second--application .content--left h2{
@@ -607,7 +607,7 @@ footer .btn:hover{
     }
     .second--application .second--screen img{
         max-width: 122%;
-        margin-left: -40px;
+        margin-left: -31px;
     }
     .ceo h2{
         margin-top: 0px;
@@ -634,5 +634,26 @@ footer .btn:hover{
     }
     footer .btn{
         margin-top: 30px;
+    }
+}
+@media(max-width:320px){
+    .container3 .right1 h2{
+        margin-top: 0px;
+    }
+    .container3 .left2 h2{
+        margin-top: 0px;
+    }
+    .ceo h2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .ceo h5{
+        margin-left: 40px;
+    }
+    .ceo h6{
+        margin-left: 20px;
+    }
+    footer{
+        background-position-x: 80%;
     }
 }
